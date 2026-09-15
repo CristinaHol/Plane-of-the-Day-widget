@@ -2,19 +2,19 @@ const items = [
     {img: "assets/f-22.jpeg" , text: "F-22", info: "a very fast jet"},
     {img: "assets/f-19.jpeg" , text: "F-19", info: "a cool plane"}
 ];
-const button = document.getElementById("testBtn");
+const button = document.getElementById("Btn");
 const randomIndex = Math.floor(Math.random() * items.length);
 
 function displayRandom(){
     const selected = items[randomIndex];
-    document.getElementById("image").style.backgroundImage = `url(${selected.img})`;
-    document.getElementById("name").textContent = selected.text;
+    document.getElementById("plane").style.backgroundImage = `url(${selected.img})`;
+    document.getElementById("title").textContent = selected.text;
 
 }
 
 displayRandom();
 let showingImage = true;
-const imageDiv = document.getElementById("image"); 
+const imageDiv = document.getElementById("plane"); 
 
 button.addEventListener("click", () => {
     const selected = items[randomIndex];

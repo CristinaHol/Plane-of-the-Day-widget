@@ -34,7 +34,7 @@ select {
   cursor: pointer;
 }
 
-#name{
+#title{
     display: flex;
     width: 157px;
     aspect-ratio: 157/27;
@@ -45,9 +45,6 @@ select {
     border: 1px solid #FF69B4;
     background: #FFC0E1;
     color: white;
-
-    /* text styling */
-    /*font-family: ;*/
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -55,7 +52,7 @@ select {
 
 }
 
-#plane{
+#innerBorder{
   display: flex;
     width: 11.25rem;
     height: 10.0625rem;
@@ -71,7 +68,7 @@ select {
 }
 
 
-#image{
+#plane{
   width: 165px;
   height: 150px;
   border-radius: 15px;
@@ -80,7 +77,7 @@ select {
   background-position: center;
 }
 
-#testBtn{
+#Btn{
   width: 50px;
   height: 10px;
   border:1px solid #FF69B4;
