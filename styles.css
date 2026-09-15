@@ -86,3 +86,10 @@ select {
   border-radius: 6.25rem;
   font-size: 8px;
 }
+
+#closebtn{
+  -webkit-app-region: no-drag;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}

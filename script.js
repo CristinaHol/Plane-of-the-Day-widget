@@ -4,6 +4,7 @@ const items = [
 ];
 const button = document.getElementById("Btn");
 const randomIndex = Math.floor(Math.random() * items.length);
+const close = document.getElementById("closebtn");
 
 function displayRandom(){
     const selected = items[randomIndex];
@@ -26,4 +27,8 @@ button.addEventListener("click", () => {
         imageDiv.style.backgroundImage = `url(${selected.img})`;
     }
     showingImage = !showingImage;
+});
+
+close.addEventListener('click', () => { 
+    window.electronAPI.close(); 
 });
