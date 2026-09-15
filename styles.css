@@ -7,14 +7,23 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-
-  background: white;
   user-select: none;
   -webkit-app-region: drag;
+  border-radius: 20px;
+  background-image: url("assets/outer-background.png");
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
 }
 
 .app {
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  padding: 1rem 1.0625rem;
 }
 
 button,
@@ -23,4 +32,60 @@ textarea,
 select {
   -webkit-app-region: no-drag;
   cursor: pointer;
+}
+
+#name{
+    display: flex;
+    width: 157px;
+    aspect-ratio: 157/27;
+    padding: 0.25rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.25rem;
+    border: 1px solid #FF69B4;
+    background: #FFC0E1;
+    color: white;
+
+    /* text styling */
+    /*font-family: ;*/
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+#plane{
+  display: flex;
+    width: 11.25rem;
+    height: 10.0625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    background-image: url("assets/inner-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#image{
+  width: 160px;
+  height: 150px;
+  border-radius: 25px;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+#testBtn{
+  width: 50px;
+  height: 10px;
+  border:1px solid #FF69B4;
+  background-color:#FFC0E1;
+  color: white;
+  border-radius: 6.25rem;
+  font-size: 8px;
 }
