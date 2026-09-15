@@ -1,6 +1,6 @@
 const items = [
-    {img: "assets/f-22.jpeg" , text: "F-22", info: "a very fast jet"},
-    {img: "assets/f-19.jpeg" , text: "F-19", info: "a cool plane"}
+    {img: "assets/f-22.jpeg" , text: "F-22", info: "F-22 Raptor is a fifth-generation stealth air superiority fighter. It entered into servie in December of 2005, and is manufactured by lockheed martin"},
+    {img: "assets/f-19.jpeg" , text: "F-19", info: "F-19 is a fictional stealth fighter that was widely belived to exist in the 1980s"}
 ];
 const button = document.getElementById("Btn");
 const randomIndex = Math.floor(Math.random() * items.length);
